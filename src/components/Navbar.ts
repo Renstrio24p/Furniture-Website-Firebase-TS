@@ -8,6 +8,7 @@ export default function Navbar(DOM: HTMLDivElement) {
             <li class='${styles['link-item']}'><a href='#/products' id='products' class='${styles.link}'>Products</a></li>
             <li class='${styles['link-item']}'><a href='#/about' id='about' class='${styles.link}'>About</a></li>
             <li class='${styles['link-item']}'><a href='#/contact' id='contact' class='${styles.link}'>Contact</a></li>
+            <li class='${styles['link-item']}'><a href='#/search' id='search' class='${styles.link}'>Search</a></li>
         </ul>
         <div class='${styles['user-interactions']}'>
             <div class='${styles.cart}'>

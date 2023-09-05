@@ -5,6 +5,8 @@ import { styles } from "../styles";
 
 export default function HomePage(DOM: HTMLDivElement) {
 
+    document.title = 'Online Store - Home'
+
     DOM.innerHTML = (`
     <header id='header' class='${styles['header-section']}'></header>
         <section class='${styles['best-selling-products-section']}'>

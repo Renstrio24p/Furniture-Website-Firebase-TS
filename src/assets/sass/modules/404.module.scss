@@ -1,0 +1,25 @@
+
+.four-o-four-section {
+    width: 100%;
+    height: 100vh;
+    background: url('../../../images/404-bg.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.error {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.sub-line {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
