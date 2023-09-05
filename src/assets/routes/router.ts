@@ -5,6 +5,7 @@ import ProductPage from "../../components/pages/ProductPage";
 import SearchPage from "../../components/pages/SearchPage";
 import { styles } from "../../components/styles";
 import PageNotFound from "../../components/pages/404Page";
+import LoginPage from "../../components/pages/LoginCredentials";
 
 // Typescript Routing System
 
@@ -15,13 +16,14 @@ export const TS_Router = () => {
   const ContactBTN = document.getElementById('contact') as HTMLAnchorElement | null;
   const SearchBTN = document.getElementById('search') as HTMLAnchorElement | null;
   const BackBTN = document.getElementById('back') as HTMLAnchorElement | null;
+  const SignUpBTN = document.getElementById('login') as HTMLImageElement | null;
 
   const Route = document.getElementById('routes') as HTMLDivElement | null;
 
   // Check if the page is being reloaded with the URL hash '#/home'
   if (window.location.hash === '#/home') {
     // Replace the URL hash with just '#'
-    window.location.replace('#');
+    window.location.replace('#/home');
   }
 
   const switchRoute = (pageFunction: (Route: HTMLDivElement) => void) => {
@@ -43,9 +45,9 @@ export const TS_Router = () => {
     }
   };
 
-  const menuItems = [HomeBTN, ProductsBTN, AboutBTN, ContactBTN, SearchBTN];
+  const menuItems = [HomeBTN, ProductsBTN, AboutBTN, ContactBTN, SearchBTN,SignUpBTN];
 
-  const pages = [HomePage, ProductPage, AboutPage, ContactPage, SearchPage, PageNotFound];
+  const pages = [HomePage, ProductPage, AboutPage, ContactPage, SearchPage,LoginPage, PageNotFound];
 
   const routeToPage = (index: number) => {
     // Check if the selected page index is within the range of available pages
@@ -119,9 +121,11 @@ export const TS_Router = () => {
       index = 3;
     } else if (hash === "#/search") {
       index = 4;
+    } else if(hash === '#/login'){
+      index = 5;
     } else {
         hash === '#';
-      index = 6; // Default to the 404 page when the URL doesn't match any of the expected values
+      index = 7; // Default to the 404 page when the URL doesn't match any of the expected values
     }
     routeToPage(index);
 

@@ -12,11 +12,13 @@ export default function Navbar(DOM: HTMLDivElement) {
         </ul>
         <div class='${styles['user-interactions']}'>
             <div class='${styles.cart}'>
-                <img src='images/cart.png' class='${styles['cart-icon']}' alt="cart icon">
+                <img src='images/cart-white.png' class='${styles['cart-icon']}' alt="cart icon">
                 <span class='${styles['cart-item-count']}'>80</span>
             </div>
             <div class='${styles.user}'>
-                <img src='images/user.png' class='${styles['user-icon']}' alt='user image'>
+                <a href='#/login'>
+                    <img src='images/user-white.png' id='login' class='${styles['user-icon']}' alt='user image'>
+                </a>
             </div>
         </div>
     `)

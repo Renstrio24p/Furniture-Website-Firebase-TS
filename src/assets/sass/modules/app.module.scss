@@ -26,16 +26,16 @@ body {
 	display: flex;
 	justify-content: center;
 	z-index: 9;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0, 0, 0, 0.795);
 	transition: .5s;
 }
 
 .navbar.bg {
-	background-color: var(--white);
+	background-color: var(--dimgray);
 }
 
 .navbar.bg .link {
-	color: var(--black);
+	color: var(--white);
 	font-weight: 500;
 	opacity: 0.5;
 }
@@ -161,6 +161,7 @@ body {
 	overflow: hidden;
 	position: relative;
 	background: var(--lightgold);
+	margin: 10px;
 }
 
 .product-card:nth-child(even){

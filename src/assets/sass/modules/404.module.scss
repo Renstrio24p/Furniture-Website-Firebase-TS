@@ -22,4 +22,10 @@
     font-size: 25px;
     text-align: center;
     font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+}
+
+.sub-line a{
+    color: var(--white);
+    text-decoration: underline;
 }
