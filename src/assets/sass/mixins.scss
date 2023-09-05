@@ -1,0 +1,51 @@
+
+@mixin Tablet {
+    .d-flex-center-gap-20 {
+        flex-direction: column;
+        transition: .5s;
+    }
+}
+
+@mixin Mobile {
+    .d-flex-gap-20 {
+        transition: all .5s;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .footer-abs-between {
+        padding: 5px 10px;
+        bottom: 0;
+    }
+
+    .d-flex-gap-20 {
+        gap: 5px;
+    }
+
+  
+}
+
+@mixin Small-Mobile {
+    .font-weight-400 {
+        font-size: 6vw;
+    }
+    .d-flex-between {
+        font-size: 3vw;
+    }
+
+    .github_img,
+    .sass_img {
+       width: 15vw;
+    }
+}
+
+@mixin Smaller-Mobile {
+
+}
